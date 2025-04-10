@@ -8,8 +8,7 @@ import java.util.ArrayList;
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *
- * @author GameMaster_Group7 
- * Date = 2025 - 03 - 20
+  Date = 2025 - 03 - 20
  */
 public abstract class Player {
     private final String name;

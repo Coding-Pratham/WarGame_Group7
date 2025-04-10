@@ -7,10 +7,7 @@ package main.java.com.mycompany.wargame_group7;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- *
- * @author Solan
- */
+
 public class WarPlayer extends Player {
     private final Queue<Card> hand = new LinkedList<>();
 

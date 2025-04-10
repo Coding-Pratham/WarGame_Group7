@@ -4,10 +4,7 @@
  */
 package main.java.com.mycompany.wargame_group7;
 
-/**
- *
- * @author Solan
- */
+
 public class PlayingCard extends Card {
     private final int value; // 2 to 14 (Ace = 14)
     private final String suit;
