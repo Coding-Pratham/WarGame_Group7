@@ -4,19 +4,28 @@
  */
 package main.java.com.mycompany.wargame_group7;
 
-/**
- *
- * @author Solan
- */
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        WarGame game = new WarGame("War Card Game");
+        Scanner scanner = new Scanner(System.in);
+        String response;
 
-        game.addPlayer(new WarPlayer("P1"));
-        game.addPlayer(new WarPlayer("P2"));
+        do {
+            WarGame game = new WarGame("War Card Game");
 
-        game.dealCards();
-        game.play();
+            game.addPlayer(new WarPlayer("P1"));
+            game.addPlayer(new WarPlayer("P2"));
+
+            game.dealCards();
+            game.play();
+
+            System.out.print("Do you want to play again? (yes/no): ");
+            response = scanner.nextLine().trim().toLowerCase();
+        } while (response.equals("yes"));
+
+        System.out.println("Thanks for playing!");
+        scanner.close();
     }
 }
 
